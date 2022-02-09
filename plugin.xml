@@ -31,11 +31,11 @@
                 <param name="ios-package" value="AppAvailability" />
             </feature>
         </config-file>
-        <edit-config file="*-Info.plist" mode="merge" target="LSApplicationQueriesSchemes">
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes" mode="merge">
             <array>
                 <string>slack</string>
             </array>
-        </edit-config>
+        </config-file>
         
         <header-file src="src/ios/AppAvailability.h" />
         <source-file src="src/ios/AppAvailability.m" />

@@ -50,7 +50,14 @@
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/queries" mode="merge">
 			<package android:name="com.Slack" />
+            <package android:name="com.csod.learning" />
 		</config-file>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest">
+            <application android:taskAffinity="" />
+        </edit-config>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+        </config-file>
         <source-file src="src/android/AppAvailability.java" target-dir="src/com/ohh2ahh/appavailability/" />
     </platform>
     

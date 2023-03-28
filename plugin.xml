@@ -52,9 +52,9 @@
 			<package android:name="com.Slack" />
             <package android:name="com.csod.learning" />
 		</config-file>
-        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest">
+        <config-file file="AndroidManifest.xml" mode="merge" target="/manifest">
             <application android:taskAffinity="" />
-        </edit-config>
+        </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
         </config-file>
